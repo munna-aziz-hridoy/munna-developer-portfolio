@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { useMatch, useResolvedPath } from "react-router-dom";
 
 const CustomLink = ({ children, to, index, ...props }) => {
   const resolved = useResolvedPath(to);
@@ -12,9 +12,9 @@ const CustomLink = ({ children, to, index, ...props }) => {
     >
       <span className="text-secondary title-text">{index + 1}.</span>
 
-      <Link to={to} {...props}>
+      <a href={`#${to}`} {...props} className="mx-3">
         {children}
-      </Link>
+      </a>
     </li>
   );
 };

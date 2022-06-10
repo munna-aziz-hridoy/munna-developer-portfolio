@@ -1,22 +1,15 @@
 import React from "react";
-import CustomStartTag from "../../../Components/Header/CustomTag/CustomStartTag";
-import CustomEndTag from "../../../Components/Header/CustomTag/CustomEndTag";
+
 import profileImg from "../../../assets/images/Profile.png";
 import Container from "../../../Components/Container/Container";
+import Heading from "../../../Components/Heading/Heading";
 
 const About = () => {
   return (
     <Container>
-      <p className="flex flex-col items-start justify-center gap-1">
-        <CustomStartTag>about</CustomStartTag>
-        <span className="text-3xl text-neutral md:text-4xl lg:text-6xl font-semibold capitalize tracking-widest">
-          about me
-        </span>
-        <span className="text-xl md:text-2xl lg:text-3xl text-accent font-semibold capitalize mt-7 tracking-wider">
-          who i'm and what i do
-        </span>
-        <CustomEndTag>about</CustomEndTag>
-      </p>
+      <Heading tag="about" subTitle="who i'm and what i do">
+        about me
+      </Heading>
       <div className="lg:flex justify-between items-start my-28 gap-7">
         <div className="w-full lg:w-1/2">
           <p className="text-lg tracking-widest text-slate-300 leading-[40px] mb-10">

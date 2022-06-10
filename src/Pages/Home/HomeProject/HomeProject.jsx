@@ -1,26 +1,19 @@
 import React from "react";
 import CustomStartTag from "../../../Components/Header/CustomTag/CustomStartTag";
-import CustomEndTag from "../../../Components/Header/CustomTag/CustomEndTag";
+
 import projectOne from "../../../assets/images/project-1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Container from "../../../Components/Container/Container";
+import Heading from "../../../Components/Heading/Heading";
 
 const HomeProject = () => {
   return (
     <Container>
-      {" "}
-      <p className="flex flex-col items-start justify-center gap-1">
-        <CustomStartTag>project</CustomStartTag>
-        <span className="text-3xl text-neutral md:text-4xl lg:text-6xl font-semibold capitalize tracking-widest">
-          projects
-        </span>
-        <span className="text-xl md:text-2xl lg:text-3xl text-accent font-semibold capitalize mt-7 tracking-wider">
-          some of work sample i've build
-        </span>
-        <CustomEndTag>project</CustomEndTag>
-      </p>
+      <Heading tag="projects" subTitle="some of work sample i've build">
+        projects
+      </Heading>
       <div className="my-28">
         <div className="flex flex-col-reverse lg:flex-row justify-between items-start relative gap-16">
           <div className=" w-full lg:w-[60%] relative">

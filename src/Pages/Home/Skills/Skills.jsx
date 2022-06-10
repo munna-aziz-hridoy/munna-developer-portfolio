@@ -3,6 +3,7 @@ import CustomStartTag from "../../../Components/Header/CustomTag/CustomStartTag"
 import CustomEndTag from "../../../Components/Header/CustomTag/CustomEndTag";
 import { Link, Outlet } from "react-router-dom";
 import Container from "../../../Components/Container/Container";
+import Heading from "../../../Components/Heading/Heading";
 
 const Skills = () => {
   const [activeSkill, setActiveSkill] = useState("front-end");
@@ -11,17 +12,12 @@ const Skills = () => {
 
   return (
     <Container>
-      {" "}
-      <p className="flex flex-col items-start justify-center gap-1">
-        <CustomStartTag>skills</CustomStartTag>
-        <span className="text-3xl text-neutral md:text-4xl lg:text-6xl font-semibold capitalize tracking-widest">
-          my skills
-        </span>
-        <span className="text-xl md:text-2xl lg:text-3xl text-accent font-semibold capitalize mt-7 tracking-wider">
-          my area of experties about web development
-        </span>
-        <CustomEndTag>skills</CustomEndTag>
-      </p>
+      <Heading
+        tag="skills"
+        subTitle="my area of experties about web development"
+      >
+        my skills
+      </Heading>
       <div className=" md:flex justify-center items-start">
         <div className="w-full md:w-[35%]">
           <ul className="my-24 flex flex-col gap-12 text-2xl font-semibold text-neutral title-text">
